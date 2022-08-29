@@ -10,8 +10,4 @@ else:
     elif not (9999 < a < 100000):
         print("Ввёденное число не являются пятизначным!")
     else:
-        tmp = 0
-        for txt in str(a):
-            if tmp < int(txt):
-                tmp = int(txt)
-        print(f'Максимальная цифра в числе {a} - {tmp}.')
+        print(f'Максимальная цифра в числе {a} - {max(str(a))}.')
