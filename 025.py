@@ -1,10 +1,9 @@
 # Дана строка. Сохранить в ней только первые вхождения символов, удалив все остальные.
 # Результат вывести в виде кортежа.
 
-old_list = list(input("Введите текст: "))
-new_list = []
-for elem in old_list:
-    if not(elem in new_list):
-        new_list.append(elem)
-new_tuple = tuple(new_list)
-print(new_tuple)
+my_tuple = tuple(input("Введите текст: "))
+my_list = []
+for elem in my_tuple:
+    if not(elem in my_list):
+        my_list.append(elem)
+print(tuple(my_list))
