@@ -13,8 +13,6 @@ else:
     if v[0] >= v[1]:
         print("Минимум должен быть меньше максимума!")
     else:
-        res = ""
         while v[0] <= v[1]:
-            res = res + str(v[0]) + " "
+            print(str(v[0]), end=' ')
             v[0] += v[2]
-        print(res)
