@@ -6,7 +6,7 @@ f = open("somefile.txt", "w")
 f.close()
 
 # Открытие файла для добавления, запрос информации от пользователя
-with open("somefile.txt", "a") as f:
+with open("somefile.txt", "a", encoding="utf-8") as f:
     while True:
         txt = input("Введите текст (конец ввода: пустая строка + Enter): ")
         if txt == "":
@@ -16,6 +16,6 @@ with open("somefile.txt", "a") as f:
 
 # Вывод подтверждающей информации, чтение результата из файла
 print("Информация записана в файл somefile.txt\nСодержание файла:")
-with open("somefile.txt", "r") as f:
+with open("somefile.txt", "r", encoding="utf-8") as f:
     for i in f:
         print(i, end='')
