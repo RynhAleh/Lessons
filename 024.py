@@ -31,4 +31,3 @@ for i in range(1, razm):
         if spis[i][j] < 0:
             sm_elem += spis[i][j]
 print(f'\nСумма отрицательных элементов под диагональю матрицы: {sm_elem}.')
-
