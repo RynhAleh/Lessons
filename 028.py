@@ -1,14 +1,10 @@
-def _ask_(txt: str) -> str:
-    while True:
-        right = True
-        list1 = txt.split(" ")
-        for i in list1:
-            if not i.isdigit():
-                print("Вы должны вводить только числа!")
-                right = False
-                break
-        if right:
-            return f'{list1}\n{tuple(list1)}'
+# Пользователь вводит последовательность чисел строкой.
+# Нужно вывести список и кортеж с этими числами.
 
-
-print(_ask_(input("Введите последовательность чисел, разделенных пробелами: ").strip()))
+list1 = input("Введите последовательность чисел, разделенных пробелами: ").strip().split(" ")
+try:
+    list1 = [int(elem) for elem in list1]
+except ValueError:
+    print("Все значения должны быть числами!")
+else:
+    print(f'{list1}\n{tuple(list1)}')
