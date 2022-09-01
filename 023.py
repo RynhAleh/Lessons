@@ -30,3 +30,4 @@ for i in range(0, razm):
     if spis[i][i] > mx_elem:
         mx_elem = spis[i][i]
 print(f'\nМаксимальный элемент диагонали матрицы: {mx_elem}.')
+# Найти максимальный элемент диагонали матрицы.
