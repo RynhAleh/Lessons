@@ -2,7 +2,6 @@
 import random
 
 spis = []
-sub_spis = []
 razm = elem = sm_elem = 0
 
 # Запрос размерности матрицы с обработкой исключений
@@ -18,13 +17,13 @@ if not (1 < razm < 21):
 # Заполнение матрицы razm х razm случайными значениями (от -200 до 200)
 print(f'Cгенерирована матрица {razm} х {razm} со значениями элементов от -200 до 200:\n')
 for i in range(0, razm):
+    sub_spis = []
     for j in range(0, razm):
         elem = random.randint(-200, 200)
         sub_spis.append(elem)
         print(str(elem).rjust(5), end='')
     print()
     spis.append(sub_spis)
-    sub_spis = []
 
 # Перебор элементов матрицы под диагональю
 for i in range(1, razm):
