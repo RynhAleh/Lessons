@@ -2,9 +2,9 @@
 # Далее написать к функции декоратор, который изменяет функцию и переводит имя в заглавные буквы.
 
 def decorator(fun):
-    def wrapper(arg):
-        arg = "ОЛЕГ"
-        return fun(arg)
+    def wrapper(_):
+        new_name = "ОЛЕГ"
+        return fun(new_name)
     return wrapper
 
 
