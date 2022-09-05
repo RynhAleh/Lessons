@@ -2,9 +2,10 @@
 # Далее написать к функции декоратор, который изменяет функцию и переводит имя в заглавные буквы.
 
 def decorator(fun):
+    # Ниже вместо аргументов wrapper используется _, так как планируется заменить аргументы своими.
+    # Установление явных (your_name) или неявных (*args) вызвало бы предупреждение IDE Parameter '...' value is not used
     def wrapper(_):
-        new_name = "ОЛЕГ"
-        return fun(new_name)
+        return fun("ОЛЕГ")
     return wrapper
 
 
