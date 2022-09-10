@@ -14,7 +14,7 @@ class Dog(Animal):
         return "Собака " + self.__whatdoes()  # __whatdoes() используется только внутри класса (ИНКАПСУЛЯЦИЯ)
 
     @staticmethod
-    def __whatdoes() -> str:
+    def __whatdoes() -> str:                  # __whatdoes() не может вызываться извне (ИНКАПСУЛЯЦИЯ)
         return "лает"
 
 
