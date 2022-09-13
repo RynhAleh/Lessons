@@ -26,12 +26,12 @@ lst = []
 
 for word in set1:
     cur = tuple1.count(word)
-    if cur > mxm:
-        lst.clear()
-        lst.append(word)
-        mxm = cur
-    elif cur == mxm:
-        lst.append(word)
+    if cur > mxm:               # обнаружена более частая встречаемость:
+        lst.clear()             # - очищаем список
+        lst.append(word)        # - добавляем слово (оно будет первым)
+        mxm = cur               # - теперь маскимальной встречаемостью будет считаться эта.
+    elif cur == mxm:            # встречаемость такая же, как максимально обнаруженная:
+        lst.append(word)        # - добавляем слово в список
 
 print(f'Проанализирован текст (количество строк: {len(txt.splitlines())}):\n{"-" * 60}\n{txt}\n{"-" * 60}')
 print(f'Чаще всего встречались слова (кол-во раз - {mxm}): {lst}.')
