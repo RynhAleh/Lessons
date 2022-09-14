@@ -3,6 +3,9 @@ import sqlite3
 conn = sqlite3.connect("mydatabase.db")
 curs = conn.cursor()
 
+# создание таблицы персоналий с уник.первичным ключом ID;
+# создание таблицы конференций с уник.первичным ключом ID;
+# создание таблицы участия с уник.первичным ключом ID, а также: ID персоны (кто будет), ID конференции (в какой будет)
 curs.execute("""CREATE TABLE PERSONS (
        ID                   INTEGER PRIMARY KEY AUTOINCREMENT,
        full_name            TEXT (50),
