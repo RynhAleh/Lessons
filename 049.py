@@ -30,7 +30,7 @@ curs.execute("""CREATE TABLE CONFERENCES (
        num_of_speakers      INTEGER);""")
 curs.execute("""CREATE TABLE PARTICIPANTS (
        ID                   INTEGER PRIMARY KEY AUTOINCREMENT,
-       ID_participant       INTEGER REFERENCES PERSONS (ID) ON DELETE CASCADE ON UPDATE CASCADE,
+       ID_person            INTEGER REFERENCES PERSONS (ID) ON DELETE CASCADE ON UPDATE CASCADE,
        ID_conference        INTEGER REFERENCES CONFERENCES (ID) ON DELETE CASCADE ON UPDATE CASCADE,
        when_sent_inv        DATE,
        when_got_app         DATE,

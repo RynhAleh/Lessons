@@ -33,6 +33,6 @@ obj_5 = Cars("Фольксваген", "Поло", 125, "синий", 17100)
 obj_1.output_dict()                                                 # вызов метода класса
 obj_2.output_txt()                                                  # вызов метода класса
 print(f'(!) {obj_3.brand} {obj_3.name}'                             # вызов атрибутов класса
-      f'{"не " if obj_3.price <= obj_4.price else ""}'              # вызов атрибутов класса
+      f'{"не " if obj_3.price <= obj_4.price else " "}'              # вызов атрибутов класса
       f'дороже, чем {obj_4.brand} {obj_4.name}')                    # вызов атрибутов класса
 print(f'>>> Я бы взял {obj_5.brand} {obj_5.name} {obj_5.color}.')   # вызов атрибутов класса
