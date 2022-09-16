@@ -10,7 +10,7 @@ curs.execute("""CREATE TABLE PERSONS (
        ID                   INTEGER PRIMARY KEY AUTOINCREMENT,
        full_name            TEXT (50),
        degree               TEXT (30),
-       s_direсtion          TEXT (30),
+       s_direction          TEXT (30),
        workplace            TEXT (50),
        department           TEXT (30),
        post                 TEXT (30),
