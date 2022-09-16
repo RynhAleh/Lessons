@@ -18,6 +18,5 @@ curs.execute("SELECT full_name FROM PERSONS WHERE ID IN("
              ")) ORDER BY full_name")
 print(*curs.fetchall(), sep="\n")
 
-
 curs.close()
 conn.close()
